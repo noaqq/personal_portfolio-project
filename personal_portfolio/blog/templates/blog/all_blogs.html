@@ -7,15 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    {% for project in projects %}
-    <h1>{{ project.title }}</h1>
-    <h2>{{ project.description }}</h2>
-    <img src="{{ project.image.url }}" height="120px">
-    {% if project.url %}
-    <br>
-        <a href="{{ project.url }}">Link</a>
-    </br>
-    {% endif %}
+    {% for blog in blogs %}
+    <h1>{{ blog.title }}</h1>
+    <h2>{{ blog.date }}</h2>
+    <h2>{{ blog.description }}</h2>
     {% endfor %}
 </body>
 </html>
